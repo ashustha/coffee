@@ -1,0 +1,482 @@
+<app-navigation></app-navigation>
+<div class="main-wrapper-brief">
+    <div class="container">
+        <div class="brief-info">
+            <div class="title">
+                <h1>Total Member Detail - 2075/76</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data associations">
+                        <img src="../../assets/img/farmer.png" alt="">
+                        <h2>12</h2>
+                        <h3>Individual Farmers</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data unions">
+                        <img src="../../assets/img/farmer_2.png" alt="">
+                        <h2>153</h2>
+                        <h3>Pulper</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 companies">
+                    <div class="brief-data">
+                        <img src="../../assets/img/processor.png" alt="">
+                        <h2>143</h2>
+                        <h3>Processor</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data associations">
+                        <img src="../../assets/img/visitor.png" alt="">
+                        <h2>92</h2>
+                        <h3>Cooperatives</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data unions">
+                        <img src="../../assets/img/cafe.png" alt="">
+                        <h2>15</h2>
+                        <h3>Cafe</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 companies">
+                    <div class="brief-data">
+                        <img src="../../assets/img/growth.png" alt="">
+                        <h2>273</h2>
+                        <h3>Nurseryman</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="container">
+        <div class="forms-wrapper">
+            <div class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <!-- <li class="active">
+                            <a href="#tab_default_1" data-toggle="tab">Coffee Form </a>
+                        </li> -->
+                        <li class = 'active'>
+                            <a href="#tab_default_2" data-toggle="tab">Individual Farmer </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_3" data-toggle="tab">Pulper </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_4" data-toggle="tab">Processor </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_5" data-toggle="tab">Cooperative </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_6" data-toggle="tab">Cafe </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_7" data-toggle="tab">Nurseryman </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!-- <div class="tab-pane active" id="tab_default_1">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Proprietor Name</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Ward No</th>
+                                                <th>Phone</th>
+                                                <th>Estimated Production</th>
+                                                <th>Fruiting Plant</th>
+                                                <th>Non Fruiting Plant</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let coffee of this.coffeeDetails; let i = index'>
+                                                <td>{{ i + 1 }}</td>
+                                                <td>{{coffee.proprietorName}}</td>
+                                                <td>{{coffee.coffeeProvince}}</td>
+                                                <td>{{coffee.coffeeDistrict}}</td>
+                                                <td>{{coffee.coffeeRuralMunicipality}}</td>
+                                                <td>{{coffee.coffeeWardNo}}</td>
+                                                <td>{{coffee.proprietorPhon}}</td>
+                                                <td>{{coffee.estimatedProduction}}</td>
+                                                <td>{{coffee.fruitingPlant}}</td>
+                                                <td>{{coffee.nonFruitingPlant}}</td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div> -->
+                        <div class="tab-pane active" id="tab_default_2">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Farmer Name</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Ward No</th>
+                                                <th>Phone</th>
+                                                <th>Potential Production</th>
+                                                <th>Estimated Production</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let farmer of this.farmerDetails; let i = index'>
+                                                <td> {{ i + 1 }} </td>
+                                                <td> {{farmer.name}} </td>
+                                                <td> {{farmer.province}} </td>
+                                                <td> {{farmer.district}} </td>
+                                                <td> {{farmer.ruralMunicipality}} </td>
+                                                <td> {{farmer.wardNo}} </td>
+                                                <td> {{ farmer.phone }}</td>
+                                                <td> {{farmer.potentialOfProduction}} </td>
+                                                <td> {{ farmer.estimatedProduction}} </td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_3">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Pulper Name</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Village/City</th>
+                                                <th>Ward No</th>
+                                                <th>Phone</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let pulper of this.pulperDetails; let i = index'>
+                                                <td> {{ i + 1 }} </td>
+                                                <td> {{pulper.name}} </td>
+                                                <td> {{pulper.province}} </td>
+                                                <td> {{pulper.district}} </td>
+                                                <td> {{pulper.villageCity}} </td>
+                                                <td> {{pulper.ruralMunicipality}} </td>
+                                                <td> {{pulper.wardNo}} </td>
+                                                <td> {{ pulper.number }}</td>
+                                                <td></td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_4">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Processor Name</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Village/City</th>
+                                                <th>Ward No</th>
+                                                <th>Phone</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let processor of this.processorDetails; let i = index'>
+                                                <td> {{ i + 1 }} </td>
+                                                <td> {{processor.name}} </td>
+                                                <td> {{processor.province}} </td>
+                                                <td> {{processor.district}} </td>
+                                                <td> {{processor.ruralMunicipality}} </td>
+                                                <td> {{processor.villageCity}} </td>
+                                                <td> {{processor.wardNo}} </td>
+                                                <td> {{ processor.number }}</td>
+                                                <td></td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_5">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Cooperative Name</th>
+                                                <th>Email</th>
+                                                <th>Contact Name</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Ward No</th>
+                                                <th>Phone</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let cooperative of this.cooperativeDetails; let i = index'>
+                                                <td> {{ i + 1 }} </td>
+                                                <td> {{cooperative.name}} </td>
+                                                <td> {{cooperative.email}} </td>
+                                                <td> {{cooperative.contactName}} </td>
+                                                <td> {{cooperative.province}} </td>
+                                                <td> {{cooperative.district}} </td>
+                                                <td> {{cooperative.ruralMunicipality}} </td>
+                                                <td> {{cooperative.wardNo}} </td>
+                                                <td> {{ cooperative.phone }}</td>
+                                                <td></td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_6">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Cafe Name</th>
+                                                <th>Phone</th>
+                                                <th>Contact Person</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Ward No</th>
+                                                <th>Email</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let cafe of this.cafeDetails; let i = index'>
+                                                <td> {{i + 1 }} </td>
+                                                <td> {{cafe.name}} </td>
+                                                <td> {{cafe.phone}} </td>
+                                                <td> {{cafe.contactName}} </td>
+                                                <td> {{cafe.province}} </td>
+                                                <td> {{cafe.district}} </td>
+                                                <td> {{cafe.ruralMunicipality}} </td>
+                                                <td> {{cafe.wardNo}} </td>
+                                                <td> {{ cafe.email }}</td>
+                                                <td></td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_7">
+                            <div class="data-table">
+                                <div class="heading clearfix">
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nursery Name</th>
+                                                <th>Year Of Establishment</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Municipality</th>
+                                                <th>Ward No</th>
+                                                <th>Number Of Plants</th>
+                                                <th>&nbsp;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor='let nursery of this.nurseryDetails; let i = index'>
+                                                <td> {{i + 1}} </td>
+                                                <td> {{nursery.name}} </td>
+                                                <td> {{ nursery.yearOfEstablishment }}</td>
+                                                <td> {{nursery.nurseryProvince}} </td>
+                                                <td> {{nursery.nurseryDistrict}} </td>
+                                                <td> {{nursery.nurseryRuralMunicipality}} </td>
+                                                <td> {{nursery.nurseryWardNo}} </td>
+                                                <td> {{nursery.numberOfPlants }}</td>
+                                                <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="pagination-wrapper clearfix">
+                                <nav aria-label="Page navigation example ">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

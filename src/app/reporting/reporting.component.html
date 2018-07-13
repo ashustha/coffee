@@ -1,0 +1,236 @@
+<app-navigation></app-navigation>
+<!-- <div>
+	<fusioncharts [dataSource] = "this.dataSource">
+		
+	</fusioncharts>
+	
+</div> -->
+<div class="main-wrapper">
+	<div class="container">
+		<div class="brief-info">
+			<div class="title">
+				<h1>Annual Reports - 2075/76</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-xs-6">
+					<div class="brief-data export">
+						<img src="../../assets/img/weight.png" alt="">
+						<h2>12250</h2>
+						<h3>Total Export in Kilogram</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="brief-data exportValue">
+						<img src="../../assets/img/funds.png" alt="">
+						<h2>1815</h2>
+						<h3>Total Export Value in Rs (000)</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="brief-data import">
+						<img src="../../assets/img/weight.png" alt="">
+						<h2>2737</h2>
+						<h3>Total Import in Kilogram</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<div class="brief-data importValue">
+						<img src="../../assets/img/funds.png" alt="">
+						<h2>2737</h2>
+						<h3>Total Import value in Rs (000)</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="data-wrapper">
+			<div class="block block1">
+				<div class="title">
+					<h1>Plantation and Production in Nepal - Plantation (HA) and Production (MT)</h1>
+				</div>
+				<div class="data-table-wrapper">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="bar-diagram">
+								<chart style="display:block; width:593px; height: 320px" [type]="type1" [data]="data1" [options]="options1"></chart>
+								<!-- <canvas #barCanvas></canvas> -->
+							</div>	
+						</div>
+						<div class="col-md-5">
+							<div class="data-table">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+									    <thead>
+									      <tr>
+									        <th>Fiscal Year</th>
+									        <th>Plantation (HA)</th>
+									        <th>Production (MT) Green Bean</th>
+									        <th>Production (MT) Roasted Bean</th>
+									        <th>Production (MT) Brown Bean</th>
+									      </tr>
+									    </thead>
+									    <tbody>
+									      <tr>
+									        <td>2066/067</td>
+									        <td>1630</td>
+									        <td>851</td>
+									        <td>551</td>
+									        <td>951</td>
+									      </tr>
+									      <tr>
+									        <td>2067/068</td>
+									        <td>1752</td>
+									        <td>624</td>
+									        <td>554</td>
+									        <td>690</td>
+									      </tr>
+									      <tr>
+									        <td>2068/069</td>
+									        <td>1760</td>
+									        <td>124</td>
+									        <td>224</td>
+									        <td>190</td>
+									      </tr>
+									      <tr>
+									        <td>2069/070</td>
+									        <td>1750</td>
+									        <td>421</td>
+									        <td>590</td>
+									        <td>490</td>
+									      </tr>
+									      <tr>
+									        <td>2070/071</td>
+									        <td>1911</td>
+									        <td>124</td>
+									        <td>222</td>
+									        <td>150</td>
+									      </tr>
+									      <tr>
+									        <td>2071/072</td>
+									        <td>2381</td>
+									        <td>245</td>
+									        <td>300</td>
+									        <td>345</td>
+									      </tr>
+									      <tr>
+									        <td>2072/073</td>
+									        <td>2618</td>
+									        <td>221</td>
+									        <td>121</td>
+									        <td>321</td>
+									      </tr>
+									    </tbody>
+									  </table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block block2">
+				<div class="title">
+					<h1>Export Import in Nepal in Rupees</h1>
+				</div>
+				<div class="data-table-wrapper">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="bar-diagram">
+								<chart style="display:block; width:593px; height: 320px" [type]="type" [data]="data" [options]="options"></chart>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="data-table">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+									    <thead>
+									      <tr>
+									        <th>Fiscal Year</th>
+									        <th>Import Value (Rs.000)</th>
+									        <!-- <th>Export Quantity (Kg)</th> -->
+									        <th>Export Value (Rs.000)</th>
+									      </tr>
+									    </thead>
+									    <tbody>
+									      <tr>
+									        <td>2066/067</td>
+									        <td>13861</td>
+									        <!-- <td>69044</td> -->
+									        <td>24363</td>
+									      </tr>
+									      <tr>
+									        <td>2067/068</td>
+									        <td>12513</td>
+									        <!-- <td>279762</td> -->
+									        <td>93089</td>
+									      </tr>
+									      <tr>
+									        <td>2068/069</td>
+									        <td>20894</td>
+									        <!-- <td>109442</td> -->
+									        <td>43095</td>
+									      </tr>
+									      <tr>
+									        <td>2069/070</td>
+									        <td>31733</td>
+									        <!-- <td>85672</td> -->
+									        <td>45259</td>
+									      </tr>
+									      <tr>
+									        <td>2070/071</td>
+									        <td>34815</td>
+									        <!-- <td>66462</td> -->
+									        <td>52395</td>
+									      </tr>
+									      <tr>
+									        <td>2071/072</td>
+									        <td>56456</td>
+									        <!-- <td>99847</td> -->
+									        <td>99304</td>
+									      </tr>
+									      <tr>
+									        <td>2072/073</td>
+									        <td>55597</td>
+									        <!-- <td>112378</td> -->
+									        <td>108191</td>
+									      </tr>
+									      <tr>
+									        <td>2073/074</td>
+									        <td>84539</td>
+									        <!-- <td>95000</td> -->
+									        <td>50405</td>
+									      </tr>
+									    </tbody>
+									  </table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7">
+					<div class="block block3">
+						<div class="title">
+							<h1>Export of Coffee in Nepal In Kilograms</h1>
+						</div>
+						<div class="bar-diagram">
+								
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="block block4">
+						<div class="title">
+							<h1>Export of Coffee in Nepal - Country Wise</h1>
+						</div>
+						<div class="pie-chart">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

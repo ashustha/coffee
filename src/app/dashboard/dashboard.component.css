@@ -1,0 +1,209 @@
+.main-wrapper {
+    background-color: #f6f0fa;
+    padding: 50px 0;
+}
+
+.brief-info {
+    background-color: #fff;
+    padding: 13px 20px;
+    margin-bottom: 20px;
+}
+
+.svg{
+    margin-top: -150px;
+    width: 100%;
+}
+
+.bottom-info {
+    background-color: transparent;
+}
+
+.data-wrapper {
+    padding: 30px 0px;
+    margin-bottom: 20px;
+}
+
+.block {
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    min-height: 420px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.title h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #09476c;
+}
+
+.brief-info .brief-data h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.brief-info .brief-data h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.title {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.title h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #09476c;
+}
+
+.footer p {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 16px;
+    color: #09476c;
+}
+
+.dropdown1,
+.dropdown2 {
+    display: inline-block;
+    width: 30%;
+}
+
+.dropdown2 {
+    float: right;
+}
+
+.graph-wrapper select {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.farmers{
+    color: #35808a;
+}
+
+.plantation{
+    color: olivedrab;
+}
+
+.production{
+    color: #6f4e37;
+}
+
+.farmers h2,
+.plantation h2,
+.production h2{
+    display: inline-block;
+}
+
+.brief-data img{
+    margin-right: 10px;
+    width: 8%;
+}
+
+.nepal-map{
+    position: relative;
+}
+
+.index{
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    left: 15%;
+    bottom: 15%;
+}
+
+.index h2{
+    margin-bottom: 10px;
+    color: #6f4e37;
+    font-size: 18px;
+    text-align: center;
+}
+
+.index1{
+    position: absolute;
+    width: 200px;
+    text-align: left;
+    left: 70%;
+    bottom: 70%;
+}
+
+.index1 h2{
+    margin-bottom: 10px;
+    color: #6f4e37;
+    font-size: 18px;
+    text-align: center;
+}
+
+.high{
+    background-color: #6b8e23;
+}
+
+.potential{
+    background-color: #b0e0e6;
+}
+
+.no{
+    background-color: #eeeeee;
+}
+
+.graph-inner-wrapper{
+    width: 100%;
+    overflow:hidden;
+    overflow-x: auto;
+}
+.graph-inner-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.graph-inner-wrapper::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    background-color: #F5F5F5;
+}
+ 
+.graph-inner-wrapper::-webkit-scrollbar-thumb {
+   background-color: #000000;
+    border: 1px solid #eee;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .brief-data {
+        margin-bottom: 10px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .brief-info .brief-data h2 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .brief-info .brief-data h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+        max-width: 245px;
+    }
+
+    .dropdown1,
+    .dropdown2 {
+        width: 40%;
+    }
+}

@@ -1,0 +1,19 @@
+.footer-wrapper{
+	background-color:#09476c;
+	padding:10px 5px;
+}
+.footer p{
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow:hidden;
+    margin-top: 20px;
+}

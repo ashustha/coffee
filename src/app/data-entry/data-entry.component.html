@@ -1,0 +1,1271 @@
+<app-navigation></app-navigation>
+<div class="main-wrapper-brief">
+    <div class="container">
+        <div class="brief-info">
+            <div class="title">
+                <h1>New Member - 2075/76</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data associations">
+                        <img src="../../assets/img/farmer.png" alt="">
+                        <h2>12</h2>
+                        <h3>Individual Farmers</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data unions">
+                        <img src="../../assets/img/farmer_2.png" alt="">
+                        <h2>153</h2>
+                        <h3>Pulper</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 companies">
+                    <div class="brief-data">
+                        <img src="../../assets/img/processor.png" alt="">
+                        <h2>143</h2>
+                        <h3>Processor</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data associations">
+                        <img src="../../assets/img/visitor.png" alt="">
+                        <h2>92</h2>
+                        <h3>Cooperatives</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                    <div class="brief-data unions">
+                        <img src="../../assets/img/cafe.png" alt="">
+                        <h2>15</h2>
+                        <h3>Cafe</h3>
+                    </div>
+                </div>
+                <div class="col-md-2 col-xs-6 companies">
+                    <div class="brief-data">
+                        <img src="../../assets/img/growth.png" alt="">
+                        <h2>273</h2>
+                        <h3>Nurseryman</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="container">
+        <div class="forms-wrapper">
+            <div class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <!-- <li class="active">
+                            <a href="#tab_default_1" data-toggle="tab">Coffee Form </a>
+                        </li> -->
+                        <li class = 'active'>
+                            <a href="#tab_default_2" data-toggle="tab">Individual Farmer </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_5" data-toggle="tab">Entity </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#tab_default_3" data-toggle="tab">Pulper </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_4" data-toggle="tab">Processor </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#tab_default_6" data-toggle="tab">Cafe </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_7" data-toggle="tab">Nursery Owner </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!-- <div class="tab-pane active" id="tab_default_1">
+                            <form [formGroup] = 'this.coffeeForm' (submit) = "addCoffee(this.coffeeForm)" ngNativeValidate>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'coffeeProvince'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="province" formControlName = 'coffeeDistrict'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="name">Individual / Entity Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Individual / Entity Name" formControlName = 'coffeeEntityName'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="ruralMunicipality">Rural Municipality / Municipality</label>
+                                        <input type="text" class="form-control" id="ruralMunicipality" placeholder="Rural Municipality / Municipality" formControlName = 'coffeeRuralMunicipality'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No.</label>
+                                        <input type="number" class="form-control" id="wardNo" placeholder="Ward No." formControlName = 'coffeeWardNo'>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="village">Village / City Name</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City Name" formControlName = 'coffeeVillageCity'>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="ProprietorName">Name of Proprietor</label>
+                                        <input type="text" class="form-control" id="ProprietorName" placeholder="Name of Propritor" formControlName = 'proprietorName'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="chiefpersonphone">Phone no.</label>
+                                        <input type="number" class="form-control" id="chiefpersonphone" placeholder="Propritor's Phone number" formControlName = 'proprietorPhone'>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                         <label for="areaOfCultivation">Area of Cultivation</label>
+                                        <div class=" input-group">
+                                            <input type="number" class="form-control" id="areaOfCultivation" placeholder="Area of Cultivation" aria-describedby="basic-addon1" formControlName = 'areaOfCultivation'>
+                                            <span class="input-group-addon" id="basic-addon1">Ropani</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="frutingPlant">Fruiting Plant</label>
+                                        <input type="text" class="form-control" id="frutingPlant" placeholder="Fruting Plant" formControlName = 'fruitingPlant'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="nonFrutingPlant">Non Fruting Plant</label>
+                                        <input type="text" class="form-control" id="nonFrutingPlant" placeholder="Non Fruting Plant" formControlName = 'nonFruitingPlant'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="totalPlants">Total Number of plants</label>
+                                        <input type="text" class="form-control" id="totalPlants" placeholder="Total Number of plants" formControlName = 'numberOfPlants'>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="estimatedproduction">Estimated Production (kg)</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" id="estimatedproduction" placeholder="Estimated Production" formControlName = 'estimatedProduction'>
+                                            <span class="input-group-addon">Kg.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div> -->
+                        <div class="tab-pane active" id="tab_default_2">
+                            <form [formGroup] = 'this.individualFarmerForm' (submit) = 'addFarmerDetails(individualFarmerForm)' ngNativeValidate>
+                                <div class="title">
+                                    <h1>Personal Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <label for="name">Name of Farmer</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Farmer Name" formControlName = 'farmerName'>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="fcontact">Contact Number</label>
+                                        <input type="number" class="form-control" id="fcontact" placeholder="Farmer's Contact Number" formControlName = 'contactNumber'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Address Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'farmerProvince'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="province" formControlName = 'farmerDistrict'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="municipality">Rural Municipality</label>
+                                        <input type="text" class="form-control" id="municipality" formControlName = 'farmerMunicipality' placeholder="Rural Municipality">
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="village">Village/City</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City" formControlName = 'villageCity'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="wardNo" placeholder="Ward No" formControlName = 'wardNo'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Affilation Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="farmerAffiliationType">Affilation Type</label>
+                                        <select class="form-control" id="farmerAffiliationType" formControlName = 'farmerAffiliationType'>
+                                            <option [ngValue] = null selected disabled>Select Affilation Type</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-3 form-group">
+                                        <label for="farmerAffiliationEntity">Affiliation Entity</label>
+                                        <select class="form-control" id="farmerAffiliationEntity" formControlName = 'farmerAffiliationEntity'>
+                                            <option [ngValue] = null selected disabled>Select cooperative name</option>
+                                            <option *ngFor = 'let coop of this.cooperativeData ' [ngValue] = "coop.cooperativeID">{{coop.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab_default_3">
+                            <form [formGroup] = 'pulperForm' (submit) = 'addPulper(pulperForm)' ngNativeValidate>
+                                <div class="title">
+                                    <h1>Personal Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <label for="name">Name of Pulper</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Pulper Name" formControlName = 'pulperName'>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="fcontact">Contact Number</label>
+                                        <input type="number" class="form-control" id="fcontact" placeholder="Farmer's Contact Number" formControlName = 'phone'>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="type">Type of Pulper</label>
+                                        <select name="type" id="type" class="form-control" formControlName = 'pulperType'>
+                                            <option [ngValue] = null selected disabled>--Select Type--</option>
+                                            <option>Hand Pulper</option>
+                                            <option>Drum/Electric Pulper</option>
+                                            <option>Mass Pulper</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Address Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'province'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="province" formControlName = 'district'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="municipality">Rural Municipality</label>
+                                        <input type="text" class="form-control" id="municipality" placeholder="Rural Municipality" formControlName = 'ruralMunicipality'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="village">Village/City</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City" formControlName = 'villageCity'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="wardNo" placeholder="Ward No" formControlName = 'wardNo'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Affilation Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="affilationType">Affilation Type</label>
+                                        <select class="form-control" id="affiliationType" formControlName = 'affiliationType'>
+                                            <option [ngValue] = null selected disabled>Select Affilation Type</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">Entity Name</label>
+                                        <select class="form-control" id="province" formControlName = 'cooperativeName'>
+                                            <option [ngValue] = null selected disabled>Select Entity Name</option>
+                                            <option *ngFor = 'let coop of this.cooperativeData ' [ngValue] = "coop.cooperativeID">{{coop.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab_default_4">
+                            <form ngNativeValidate [formGroup] = 'this.processorForm' (submit) = 'addProcessors(this.processorForm)'>
+                                <div class="title">
+                                    <h1>Personal Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="pname">Name of Processor</label>
+                                        <input type="text" class="form-control" id="pname" placeholder="Name of Processor" formControlName = 'name'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="contact">Contact Number</label>
+                                        <input type="number" class="form-control" id="contact" placeholder="Contact Number" formControlName = 'phone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="email">Contact Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Contact Email" formControlName = 'email'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="website">Website</label>
+                                        <input type="text" class="form-control" id="website" placeholder="Contact Website" formControlName = 'website'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="pan">PAN Number (If Applicable)</label>
+                                        <input type="text" class="form-control" id="pan" placeholder="PAN" formControlName = 'pan'>
+                                    </div>
+
+                               
+
+                                </div>
+                                <div class="title">
+                                    <h1>Address Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'province'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="district" formControlName = 'district'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="municipality">Rural Municipality</label>
+                                        <input type="text" class="form-control" id="municipality" placeholder="Rural Municipality" formControlName = 'ruralMunicipality'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="village">Village/City</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City" formControlName = 'villageCity'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="wardNo" placeholder="Ward No" formControlName = 'wardNo'>
+                                    </div>
+                                </div>
+
+                                 <div class="title">
+                                    <h1>Contact Personel</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="cpname">Contact Person Name</label>
+                                        <input type="text" class="form-control" id="cpname" placeholder="Contact Person Name" formControlName = 'processorContactName'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="position">Position</label>
+                                        <input type="text" class="form-control" id="position" placeholder="Position" formControlName = 'processorContactPosition'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="cnumber">Contact Number</label>
+                                        <input type="number" class="form-control" id="cnumber" placeholder="Contact Number" formControlName = 'processorContactNumber'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress">Email Address</label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'processorEmail'>
+                                    </div>
+                                </div>
+                              
+
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab_default_5">
+                            <form [formGroup] = 'cooperativeForm' (submit) = 'addCooperativeDetails(cooperativeForm)'>
+                                <div class="title">
+                                    <h1>Entity Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="cname">Name of Entity</label>
+                                        <input type="text" class="form-control" id="cname" placeholder="Name of Entity" formControlName = 'name'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="contact">Contact Number</label>
+                                        <input type="text" class="form-control" id="contact" placeholder="Contact Number" formControlName = 'phone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress">Email Address</label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'email'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Address Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'province'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="district" formControlName = 'district'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="municipality">Rural Municipality</label>
+                                        <input type="text" class="form-control" id="municipality" placeholder="Rural Municipality" formControlName = 'ruralMunicipality'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="village">Village/City</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City" formControlName = 'villageCity'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="wardNo" placeholder="Ward No" formControlName = 'wardNo'>
+                                    </div>
+                                </div>
+                                 <div class="title">
+                                    <h1>Affilation Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="affilationType">Affilation Type</label>
+                                        <select class="form-control" id="affiliationType" formControlName = 'affiliationType'>
+                                            <option [ngValue] = null selected disabled>Select Affilation Type</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-3 form-group">
+                                        <label for="affiliationEntity">Affiliation Entity</label>
+                                        <select class="form-control" id="affiliationEntity" formControlName = 'affiliationEntity'>
+                                            <option [ngValue] = null selected disabled>Select cooperative name</option>
+                                            <option *ngFor = 'let coop of this.cooperativeData ' [ngValue] = "coop.cooperativeID">{{coop.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="title">
+                                    <h1>Contact Personel</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="cpname">Contact Person Name</label>
+                                        <input type="text" class="form-control" id="cpname" placeholder="Contact Person Name" formControlName = 'contactName'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="position">Position</label>
+                                        <input type="text" class="form-control" id="position" placeholder="Position" formControlName = 'contactPosition'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="cnumber">Contact Number</label>
+                                        <input type="number" class="form-control" id="cnumber" placeholder="Contact Number" formControlName = 'contactPhone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress">Email Address</label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'contactEmail'>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab_default_6">
+                            <form ngNativeValidate [formGroup] = 'this.cafeForm' (submit) = 'addCafe(this.cafeForm)'>
+                                <div class="title">
+                                    <h1>Cafe Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="name">Name of cafe</label>
+                                        <input type="text" class="form-control" id="" placeholder="Name of Cafe" formControlName = 'name'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="number">Contact Nubmer</label>
+                                        <input type="text" class="form-control" id="number" placeholder="Contact Nubmer" formControlName = 'phone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress"></label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'email'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Address Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'province'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="province" formControlName = 'district'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="municipality">Rural Municipality</label>
+                                        <input type="text" class="form-control" id="municipality" placeholder="Rural Municipality" formControlName = 'ruralMunicipality'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="village">Village/City</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City" formControlName = 'villageCity'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="wardNo" placeholder="Ward No" formControlName = 'wardNo'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Contact Person</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="cpname">Contact Person Name</label>
+                                        <input type="text" class="form-control" id="cpname" placeholder="Contact Person Name" formControlName = 'contactName'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="position">Position</label>
+                                        <input type="text" class="form-control" id="position" placeholder="Position" formControlName = 'position'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="cnumber">Contact Number</label>
+                                        <input type="number" class="form-control" id="cnumber" placeholder="Contact Number" formControlName = 'contactPhone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress">Email Address</label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'contactEmail'>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab_default_7">
+                            <form [formGroup] = 'this.nurseryMenForm' (submit) = 'addNurseryMen(this.nurseryMenForm)' ngNativeValidate>
+                                <div class="title">
+                                    <h1>Nurseryman Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="name">Name of Nurseryman</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Name of Nurseryman" formControlName = 'name'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="contact">Contact Number</label>
+                                        <input type="number" class="form-control" id="contact" placeholder="Contact Number" formControlName = 'nurseryPhone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress">Email Address</label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'nurseryEmail'>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="yearOfEstablishment">Year of Establishment</label>
+                                        <select class="form-control" id="yearOfEstablishment" formControlName = 'yearOfEstablishment'>
+                                            <option selected disabled>Select year</option>
+                                            <option>2018</option>
+                                            <option>2017</option>
+                                            <option>2016</option>
+                                            <option>2015</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="title">
+                                    <h1>Address Details</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="province">Province</label>
+                                        <select class="form-control" id="province" formControlName = 'nurseryProvince'>
+                                            <option selected disabled>Select Province</option>
+                                            <option>Province 1</option>
+                                            <option>Province 2</option>
+                                            <option>Province 3</option>
+                                            <option>Province 4</option>
+                                            <option>Province 5</option>
+                                            <option>Province 6</option>
+                                            <option>Province 7</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="district">District</label>
+                                        <select class="form-control" id="province" formControlName = 'nurseryDistrict'>
+                                            <option selected disabled>Select District</option>
+                                            <option>Taplejung</option>
+                                            <option>Sankhuwasabha</option>
+                                            <option>Solukhumbu</option>
+                                            <option>Okhaldhunga</option>
+                                            <option>Khotang</option>
+                                            <option>Bhojpur</option>
+                                            <option>Dhankuta</option>
+                                            <option>Terhathum</option>
+                                            <option>Panchthar</option>
+                                            <option>Ilam</option>
+                                            <option>Jhapa</option>
+                                            <option>Morang</option>
+                                            <option>Sunsari</option>
+                                            <option>Udayapur</option>
+                                            <option>Saptari</option>
+                                            <option>Siraha</option>
+                                            <option>Dhanusa</option>
+                                            <option>Mahottari</option>
+                                            <option>Sarlahi</option>
+                                            <option>Rautahat </option>
+                                            <option>Bara</option>
+                                            <option>Parsa</option>
+                                            <option>Dolakha</option>
+                                            <option>Sindhupalchok</option>
+                                            <option>Rasuwa</option>
+                                            <option>Dhading</option>
+                                            <option>Nuwakot</option>
+                                            <option>Kathmandu</option>
+                                            <option>Bhaktapur</option>
+                                            <option>Lalitpur</option>
+                                            <option>Kavrepalanchok</option>
+                                            <option>Ramechhap</option>
+                                            <option>Sindhuli</option>
+                                            <option>Makwanpur</option>
+                                            <option>Chitawan</option>
+                                            <option>Gorkha</option>
+                                            <option>Manang</option>
+                                            <option>Mustang</option>
+                                            <option>Myagdi</option>
+                                            <option>Kaski</option>
+                                            <option>Lamjung</option>
+                                            <option>Tanahu</option>
+                                            <option>Nawalparasi east</option>
+                                            <option>Syangja</option>
+                                            <option>Parbat</option>
+                                            <option>Baglung</option>
+                                            <option>Rukum east</option>
+                                            <option>Rolpa</option>
+                                            <option>Pyuthan</option>
+                                            <option>Gulmi</option>
+                                            <option>Arghakhanchi</option>
+                                            <option>Palpa</option>
+                                            <option>Nawalparasi west</option>
+                                            <option>Rupandehi</option>
+                                            <option>Kapilbastu</option>
+                                            <option>Dang</option>
+                                            <option>Banke</option>
+                                            <option>Bardiya</option>
+                                            <option>Dolpa</option>
+                                            <option>Mugu</option>
+                                            <option>Humla</option>
+                                            <option>Jumla</option>
+                                            <option>Kalikot</option>
+                                            <option>Dailekh</option>
+                                            <option>Jajarkot</option>
+                                            <option>Rukum west</option>
+                                            <option>Salyan</option>
+                                            <option>Surkhet</option>
+                                            <option>Bajura</option>
+                                            <option>Bajhang</option>
+                                            <option>Darchula</option>
+                                            <option>Baitadi</option>
+                                            <option>Dadeldhura</option>
+                                            <option>Doti</option>
+                                            <option>Achham</option>
+                                            <option>Kailali</option>
+                                            <option>Kanchanpur</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="municipality">Rural Municipality</label>
+                                        <input type="text" class="form-control" id="municipality" placeholder="Rural Municipality" formControlName = 'nurseryRuralMunicipality'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="village">Village/City</label>
+                                        <input type="text" class="form-control" id="village" placeholder="Village / City" formControlName = 'nurseryVillageCity'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="wardNo">Ward No</label>
+                                        <input type="text" class="form-control" id="wardNo" placeholder="Ward No" formControlName = 'nurseryWardNo'>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h1>Contact Person</h1>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3 form-group">
+                                        <label for="name">Contact Person Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Contact Person Name" formControlName = 'nurseryContactName'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="position">Position</label>
+                                        <input type="text" class="form-control" id="position" placeholder="Position" formControlName = 'nurseryContactPosition'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="cnumber">Contact Number</label>
+                                        <input type="number" class="form-control" id="cnumber" placeholder="Contact Number" formControlName = 'nurseryContactPhone'>
+                                    </div>
+                                    <div class="col-md-3 form-group">
+                                        <label for="eaddress">Email Address</label>
+                                        <input type="text" class="form-control" id="eaddress" placeholder="Email Address" formControlName = 'nurseryContactEmail'>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn submit-btn">Save & Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

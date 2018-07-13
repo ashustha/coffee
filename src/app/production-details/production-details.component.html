@@ -1,0 +1,727 @@
+<app-navigation></app-navigation>
+<div class="main-wrapper-brief">
+    <div class="container">
+        <div class="brief-info">
+            <div class="title">
+                <h1>Annual Reports - 2075/76</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-6">
+                    <div class="brief-data associations">
+                        <img src="../../assets/img/visitor.png" alt="">
+                        <h2>12</h2>
+                        <h3>Coffee Producers Associations</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="brief-data unions">
+                        <img src="../../assets/img/deal.png" alt="">
+                        <h2>1815</h2>
+                        <h3>Coffee Entities</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 companies">
+                    <div class="brief-data">
+                        <img src="../../assets/img/factory.png" alt="">
+                        <h2>273</h2>
+                        <h3>Total Number of Coffee Companies</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="container">
+        <div class="forms-wrapper" style='margin-top: -86px'>
+            <div class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <li class='active'>
+                            <a href="#tab_default_2" data-toggle="tab">Individual</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_5" data-toggle="tab">Entity</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_3" data-toggle="tab">Pulper</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_4" data-toggle="tab">Processor</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_6" data-toggle="tab">Nursery Owner</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_default_2">
+                            <div class="row">
+                                <div class='col-md-12'>
+                                    <div class="heading clearfix">
+                                        <form class="search-form">
+                                            <div class="form-group has-feedback">
+                                                <label for="search" class="sr-only">Search</label>
+                                                <input type="text" class="form-control" name="farmerSearc" id="farmerSearch" placeholder="search" #farmerSearch (input)="filterSearch(farmerSearch.value, 'individualFarmer')">
+                                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Rural Municipality</th>
+                                                <th>Village/City</th>
+                                            </tr>
+                                            <tr *ngFor="let details of farmerProductionDetails">
+                                                <td data-toggle="modal" data-target="#individualFarmerModal" (click)="showProductionDetails(details.farmerID)"><a class='details'>{{details.name}}</a></td>
+                                                <td>{{details.phone}}</td>
+                                                <td>{{details.province}}</td>
+                                                <td>{{details.district}}</td>
+                                                <td>{{details.ruralMunicipality}}</td>
+                                                <td>{{details.villageCity}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="pagination-wrapper clearfix">
+                                        <nav aria-label="Page navigation example ">
+                                            <ul class="pagination pull-right">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div id="individualFarmerModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h1>Production Details (Current Year)</h1>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <tr>
+                                                                <th> Name </th>
+                                                                <th> Area Of Cultivation </th>
+                                                                <th> Estimated Production </th>
+                                                                <th> 3-5 Years </th>
+                                                                <th> 5-15 Years </th>
+                                                                <th> 15+ Years </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>{{modalName}}</td>
+                                                                <td>{{modalAreaOfCultivation}}</td>
+                                                                <td>{{modalEstimatedProduction}}</td>
+                                                                <td>{{modalThreeToFive}}</td>
+                                                                <td>{{modalFiveToFifteen}}</td>
+                                                                <td>{{modalFifteenPlus}}</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <button class="btn submit-btn" (click)="showFields()">Add Production Details</button>
+                                                    <hr/>
+                                                    <form class='form' [formGroup]='this.individualFarmerForm' (submit)='addFarmerDetails(individualFarmerForm)' ngNativeValidate id='individualFarmerForm'>
+                                                        <div class="title">
+                                                            <h1>Production Details</h1>
+                                                        </div>
+                                                        <div class="from-group row">
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="year">Year</label>
+                                                                <div>
+                                                                    <input type="text" class='form-control' id='year' placeholder="Data for Year...." formControlName='year'>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="areaOfCultivation">Area of Cultivation</label>
+                                                                <div class=" input-group">
+                                                                    <input type="number" class="form-control" id="areaOfCultivation" placeholder="Area of Cultivation" aria-describedby="basic-addon1" formControlName='areaOfCultivation'>
+                                                                    <span class="input-group-addon" id="basic-addon1">Ropani</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="estimatedproduction">Estimated Production</label>
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" id="estimatedproduction" placeholder="Estimated Production" aria-describedby="basic-addon3" formControlName='estimatedProduction'>
+                                                                    <span class="input-group-addon" id="basic-addon3">Kg.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title">
+                                                            <h1>Plant Details</h1>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="age1">Between 3 to 5 years</label>
+                                                                <input type="number" class="form-control" id="age1" placeholder="Number of plants" formControlName='threeToFive'>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="age1">Between 5 to 15 years</label>
+                                                                <input type="number" class="form-control" id="age1" placeholder="Number of plants" formControlName='fiveToFifteen'>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="age1">Between age 15+ years</label>
+                                                                <input type="number" class="form-control" id="age1" placeholder="Number of plants" formControlName='fifteenplus'>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn submit-btn">Save & Submit</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_3">
+                            <div class="row">
+                                <div class='col-md-12'>
+                                    <div class="heading clearfix">
+                                        <form class="search-form">
+                                            <div class="form-group has-feedback">
+                                                <label for="search" class="sr-only">Search</label>
+                                                <input type="text" class="form-control" name="pulperSearch" id="pulperSearch" placeholder="search" #pulperSearch (input)="filterSearch(pulperSearch.value, 'pulper')">
+                                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Village/City</th>
+                                                <th>Pulper Type</th>
+                                            </tr>
+                                            <tr *ngFor="let details of this.pulperProductionDetails">
+                                                <td data-toggle="modal" data-target="#pulperModal" (click)="showProductionDetailsPulper(details.pulperID)"><a class='details'>{{details.name}}</a></td>
+                                                <td>{{details.phone}}</td>
+                                                <td>{{details.province}}</td>
+                                                <td>{{details.district}}</td>
+                                                <td>{{details.villageCity}}</td>
+                                                <td>{{details.pulperType}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="pagination-wrapper clearfix">
+                                        <nav aria-label="Page navigation example ">
+                                            <ul class="pagination pull-right">
+                                                <li class="page-item"><a class="page-link">Previous</a></li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link">2</a></li>
+                                                <li class="page-item"><a class="page-link">3</a></li>
+                                                <li class="page-item"><a class="page-link">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div id="pulperModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h1>Production Details (Current Year)</h1>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="table-responsive" *ngIf="detailsLength != 0">
+                                                        <table class="table table-hover">
+                                                            <tr>
+                                                                <th> Name </th>
+                                                                <th>Pulping Capacity </th>
+                                                                <th> Fermentation Process</th>
+                                                                <th> Collection From Farmers </th>
+                                                                <th> Parchment Quantityl </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>{{pulpModalName}}</td>
+                                                                <td>{{pulpModalPulpingCapacity}}</td>
+                                                                <td>{{pulpModalFermentation}}</td>
+                                                                <td>{{pulpModalCollection}}</td>
+                                                                <td>{{pulpModalParchment}}</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="placeholder" *ngIf="detailsLength == 0">
+                                                        <h1 class="center">Production Details for this pulper is unavailable. Please add a new production detail.</h1>
+                                                    </div>
+                                                    <button class="btn submit-btn" (click)="showPulperFields()">Add Production Details</button>
+                                                    <hr/>
+                                                    <form class='form' [formGroup]='pulperForm' id='pulperForm' (submit)='addPulperProductionDetails(pulperForm)' ngNativeValidate hidden>
+                                                        <div class="title">
+                                                            <h1>Production Fields</h1>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="year">Pulper Year</label>
+                                                                <input type="text" class="form-control" id="year" formControlName='year'>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row form-group">
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="formentationProcess">Formentation Process</label>
+                                                                <div>
+                                                                    <select class="form-control" id="formentationProcess" placeholder="Collection from Farmers" formControlName='formentationProcess'>
+                                                                        <option [ngValue]=null selected disabled>--Select Formentation Process--</option>
+                                                                        <option>Honey</option>
+                                                                        <option>Wet</option>
+                                                                        <option>Dry/Natural</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="pulpingCapacity">Pulping Capacity</label>
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" id="pulperCapacity" placeholder="Capacity of Pulping" formControlName='pulperCapacity'>
+                                                                    <span class="input-group-addon">Per Hour</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="collectionFromFarmers">Collection from Farmers</label>
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" id="collectionFromFarmers" placeholder="Collection from Farmers" formControlName='collectionFromFarmers'>
+                                                                    <span class="input-group-addon">Kg.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="parchmentQuantity">Parchment Quantity</label>
+                                                                <div class="input-group">
+                                                                    <input type="number" class="form-control" id="parchmentQuantity" placeholder="Parchment Quantity" formControlName='parchmentQuantity'>
+                                                                    <span class="input-group-addon">Kg.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn submit-btn">Save & Submit</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_4">
+                            <div class="row">
+                                <div class='col-md-12'>
+                                    <div class="heading clearfix">
+                                        <form class="search-form">
+                                            <div class="form-group has-feedback">
+                                                <label for="search" class="sr-only">Search</label>
+                                                <input type="text" class="form-control" name="processorSearch" id="processorSearch" placeholder="search" #processorSearch (input)="filterSearch(processorSearch.value,'processor')">
+                                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Email</th>
+                                                <th>Website</th>
+                                                <th>PAN NO</th>
+                                                <th>Province</th>
+                                                <th>District</th>
+                                                <th>Contact Name</th>
+                                                <th>Contact Number</th>
+                                            </tr>
+                                            <tr *ngFor="let details of this.processorProductionDetails">
+                                                <td data-toggle="modal" data-target="#processorModal" (click)="showProductionDetailsProcessor(details.processorsID)"><a class='details'>{{details.name}}</a></td>
+                                                <td>{{details.phone}}</td>
+                                                <td>{{details.processorEmail}}</td>
+                                                <td>{{details.processorWebsite}}</td>
+                                                <td>{{details.pan}}</td>
+                                                <td>{{details.province}}</td>
+                                                <td>{{details.district}}</td>
+                                                <td>{{details.processorContactName}}</td>
+                                                <td>{{details.processorContactNumber}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="pagination-wrapper clearfix">
+                                        <nav aria-label="Page navigation example ">
+                                            <ul class="pagination pull-right">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div id="processorModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h1>Production Details (Current Year)</h1>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Collection From Farmer</th>
+                                                                <th>Green Beans</th>
+                                                                <th>Roasted Beans</th>
+                                                                <th>Ground Coffee</th>
+                                                                <th>Total Quantity Processed</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>{{processorModalName}}</td>
+                                                                <td>{{processorModalCollection}}</td>
+                                                                <td>{{processorModalGreenBeans}}</td>
+                                                                <td>{{processorModalRoastedBeans}}</td>
+                                                                <td>{{processorModalGroundCoffee}}</td>
+                                                                <td>{{processorModalTotalQuantity}}</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <button class="btn submit-btn" (click)="showProcessingFields()">Add Production Details</button>
+                                                    <hr/>
+                                                    <form class='form' ngNativeValidate id='processorForm' [formGroup]='this.processorForm' (submit)='addProcessorProductionDetails(this.processorForm)'>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-12">
+                                                                <div class="title">Year Of Production</div>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <input type="text" class="form-control" id="year" formControlName='year'>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-12">
+                                                                <div class="title">
+                                                                    <h1>Collection From Farmers</h1>
+                                                                </div>
+                                                                <label for="collection">Total Collection</label>
+                                                                <div class="input-group form-group col-md-6">
+                                                                    <input type="text" class="form-control" name="collection" placeholder="Total Collection" formControlName='collectionFromFarmer'>
+                                                                    <span class="input-group-addon">Kg.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6">
+                                                                <div class="title">
+                                                                    <h1>Total Processing</h1>
+                                                                </div>
+                                                                <label for="greenBeans">Green Beans</label>
+                                                                <div class="input-group form-group">
+                                                                    <input type="number" class="form-control" name="greenBeans" placeholder="Green Beans" formControlName='greenBeans'>
+                                                                    <span class="input-group-addon">Kg.</span>
+                                                                </div>
+                                                                <label for="roastedBeans">Roasted Beans</label>
+                                                                <div class="input-group form-group">
+                                                                    <input type="number" class="form-control" id="roastedBeans" placeholder="Rosted Beans" formControlName='roastedBeans'>
+                                                                    <span class="input-group-addon">Kg.</span>
+                                                                </div>
+                                                                <label for="groundCoffee">Ground Coffee</label>
+                                                                <div class="input-group form-group">
+                                                                    <input type="number" class="form-control" placeholder="Ground Coffee" formControlName='groundCoffee'>
+                                                                    <span class="input-group-addon">Kg.</span>
+                                                                </div>
+                                                                <label for="totalQuantityProcessed">Total Quantity Processed</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="totalQuantityProcessed" placeholder="Processed Quantity" formControlName='totalQuantityProcessed' value='{{this.processorForm.value.greenBeans+ this.processorForm.value.roastedBeans + this.processorForm.value.groundCoffee}}'>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title" style='margin-top: 30px'>
+                                                            <h1>Supply Details</h1>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="domesticMarket">Domestic Market</label>
+                                                                <input type="number" class="form-control" id="domesticMarket" placeholder="Domestic Market" formControlName='domesticMarket'>
+                                                            </div>
+                                                            <div class="col-md-6 form-group">
+                                                                <label for="internationalMarket">International Market</label>
+                                                                <input type="number" class="form-control" id="internationalMarket" placeholder="International Market" formControlName='internationalMarket'>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn submit-btn">Save & Submit</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_5">
+                            <div class="tab-pane" id="tab_default_3">
+                                <div class="row">
+                                    <div class='col-md-12'>
+                                        <div class="heading clearfix">
+                                            <form class="search-form">
+                                                <div class="form-group has-feedback">
+                                                    <label for="entitySearch" class="sr-only">Search</label>
+                                                    <input type="text" class="form-control" placeholder="search" name="entitySearch" id="entitySearch" #entitySearch (input)="filterSearch(entitySearch.value, 'entity')">
+                                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th> Name </th>
+                                                    <th> Phone </th>
+                                                    <th> Email </th>
+                                                    <th> Contact Person Name </th>
+                                                    <th> Contact Person Phone </th>
+                                                    <th> District </th>
+                                                    <th> Rural Municipality </th>
+                                                </tr>
+                                                <tr *ngFor="let details of this.cooperativeProductionDetails ">
+                                                    <td data-toggle="modal" data-target="#cooperativeModal" (click)="showProductionDetailsCooperative(details.cooperativeID)"><a class='details'>{{details.name}}</a></td>
+                                                    <td>{{details.phone}}</td>
+                                                    <td>{{details.email}}</td>
+                                                    <td>{{details.contactName}}</td>
+                                                    <td>{{details.contactPhone}}</td>
+                                                    <td>{{details.district}}</td>
+                                                    <td>{{details.ruralMunicipality}}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="pagination-wrapper clearfix">
+                                            <nav aria-label="Page navigation example ">
+                                                <ul class="pagination pull-right">
+                                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div id="cooperativeModal" class="modal fade" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h1>Production Details (Current Year)</h1>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover">
+                                                                <tr>
+                                                                    <th> Name </th>
+                                                                    <th> Area Of Cultivation </th>
+                                                                    <th> Estimated Production </th>
+                                                                    <th> 3-5 Years </th>
+                                                                    <th> 5-15 Years </th>
+                                                                    <th>15+ Years</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>{{entityModalName}}</td>
+                                                                    <td>{{entityModalAreaOfCultivation}}</td>
+                                                                    <td>{{entityModalEstimatedProduction}}</td>
+                                                                    <td>{{entityModalThreeToFive}}</td>
+                                                                    <td>{{entityModalFiveToFifteen}}</td>
+                                                                    <td>{{entityModalFifteenPlus}}</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <button class="btn submit-btn" (click)="showEntityFields()">Add Production Details</button>
+                                                        <hr/>
+                                                        <form class='form' id='cooperativeForm' [formGroup]='cooperativeForm' (submit)='addCooperativeProductionDetails(cooperativeForm)'>
+                                                            <div class="title">
+                                                                <h1>Production Details</h1>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="year">Year</label>
+                                                                    <div>
+                                                                        <input type="number" class="form-control" id="year" placeholder="Year of production (Example: 2075/76)" formControlName='year'>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="areaOfCultivation">Area of Cultivation</label>
+                                                                    <div class=" input-group">
+                                                                        <input type="number" class="form-control" id="areaOfCultivation" placeholder="Area of Cultivation" aria-describedby="basic-addon1" formControlName='areaOfCultivation'>
+                                                                        <span class="input-group-addon" id="basic-addon1">Ropani</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 form-group">
+                                                                    <label for="estimatedproduction">Estimated Production</label>
+                                                                    <div class="input-group">
+                                                                        <input type="number" class="form-control" id="estimatedproduction" placeholder="Estimated Production" aria-describedby="basic-addon3" formControlName='estimatedProduction'>
+                                                                        <span class="input-group-addon" id="basic-addon3">Kg.</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="title">
+                                                                <h1>Plant Details</h1>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-md-4 form-group">
+                                                                    <label for="age1">Between age 3 to 5 years</label>
+                                                                    <input type="number" class="form-control" id="age1" placeholder="Number of plants" formControlName='threeToFive'>
+                                                                </div>
+                                                                <div class="col-md-4 form-group">
+                                                                    <label for="age1">Between age 5 to 15 years</label>
+                                                                    <input type="number" class="form-control" id="age1" placeholder="Number of plants" formControlName='fiveToFifteen'>
+                                                                </div>
+                                                                <div class="col-md-4 form-group">
+                                                                    <label for="age1">Between age 15+ years</label>
+                                                                    <input type="number" class="form-control" id="age1" placeholder="Number of plants" formControlName='fifteenPlus'>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <button class="btn submit-btn">Save & Submit</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_6">
+                            <div class="row">
+                                <div class='col-md-12'>
+                                    <div class="heading clearfix">
+                                        <form class="search-form">
+                                            <div class="form-group has-feedback">
+                                                <label for="search" class="sr-only">Search</label>
+                                                <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Year</th>
+                                                <th>Number Of Plants</th>
+                                                <th>Sold Plants</th>
+                                            </tr>
+                                            <tr *ngFor="let details of this.nurseryProductionDetails">
+                                                <td data-toggle="modal" data-target="#nurseryModal" (click)="showNurseryProductionDetails(details)"><a class='details'>{{details.name}}</a></td>
+                                                <td>{{details.year}}</td>
+                                                <td>{{details.numberOfPlants}}</td>
+                                                <td>{{details.soldPlants}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="pagination-wrapper clearfix">
+                                        <nav aria-label="Page navigation example ">
+                                            <ul class="pagination pull-right">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div id="nurseryModal" class="modal fade" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h1>Production Details (Current Year)</h1>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-hover">
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Year</th>
+                                                                <th>Number Of Plants</th>
+                                                                <th>Sold Plants</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>{{nurseryModalName}}</td>
+                                                                <td>{{nurseryModalYear}}</td>
+                                                                <td>{{nurseryModalNoPlants}}</td>
+                                                                <td>{{nurseryModalSoldPlants}}</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <button class="btn submit-btn" (click)="showNurseryFields()">Add Production Details</button>
+                                                    <hr/>
+                                                    <form class='form' id='nurseryForm' [formGroup]='this.nurseryMenForm' ngNativeValidate hidden>
+                                                        <div class="title">
+                                                            <h1>Coffee Plants Details</h1>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-md-3">
+                                                                <label>Year</label>
+                                                                <input type="text" id="year" formControlName="year" class="form-control">
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label for="numberOfPlants">No of Plants Produced</label>
+                                                                <input type="text" class="form-control" id="numberOfPlants" formControlName='numberOfPlants'>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label for="soldPlants">No of Plants Sold</label>
+                                                                <input type="text" class="form-control" id="soldPlants" formControlName='soldPlants'>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="add-plant-detail">
+                                                                    <span (click)='addToCoffePlants(this.nurseryMenForm.value.year, this.nurseryMenForm.value.numberOfPlants, this.nurseryMenForm.value.soldPlants)'><i class="fa fa-plus-circle add-icon fa-lg" aria-hidden="true"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                            </div>
+                                                            <div class='data-table col-md-12'>
+                                                                <div class="table-responsive">
+                                                                    <table class='table table-hover'>
+                                                                        <tr>
+                                                                            <th>Year</th>
+                                                                            <th>Number of Plants Produced</th>
+                                                                            <th>Number of Plants Sold</th>
+                                                                        </tr>
+                                                                        <tr *ngFor='let plant of this.plantDetailsArray'>
+                                                                            <td>{{plant.year}}</td>
+                                                                            <td>{{plant.numberOfPlants}}</td>
+                                                                            <td>{{plant.soldPlants}}</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn submit-btn">Save & Submit</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

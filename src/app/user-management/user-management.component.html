@@ -1,0 +1,411 @@
+<app-navigation></app-navigation>
+<div class="main-wrapper-brief">
+    <div class="container">
+        <div class="brief-info">
+            <div class="title">
+                <h1>Annual Reports - 2075/76</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-6">
+                    <div class="brief-data associations">
+                        <img src="../../assets/img/team.png" alt="">
+                        <h2>128</h2>
+                        <h3>Total Users - U1</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="brief-data unions">
+                        <img src="../../assets/img/team.png" alt="">
+                        <h2>153</h2>
+                        <h3>Total Users - U2</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 companies">
+                    <div class="brief-data">
+                        <img src="../../assets/img/team.png" alt="">
+                        <h2>143</h2>
+                        <h3>Total Users - U3</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="add-btn-wrapper">
+        <button class="form-control btn add-btn" data-toggle='modal' data-target='#addUserModal'><i class="fa fa-plus add-icon" aria-hidden="true"></i> Add User</button>
+    </div>
+    <div class="container">
+        <div class="forms-wrapper">
+            <div class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <li class='active'>
+                            <a href="#tab_default_2" data-toggle="tab">Level 1</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_3" data-toggle="tab">Level 2</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_4" data-toggle="tab">Level 3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_default_2">
+                            <div class="block block1">
+                                <div class="heading clearfix">
+                                    <div class="title">
+                                        <h1>User - Level 1</h1>
+                                    </div>
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="data-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Username</th>
+                                                    <th>Province</th>
+                                                    <th>District</th>
+                                                    <th>Municipality</th>
+                                                    <th>Ward No</th>
+                                                    <th>Phone</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor='let user of this.level1Data; let i = index'>
+                                                    <td> {{i+1}} </td>
+                                                    <td> {{user.username}} </td>
+                                                    <td> {{user.province}} </td>
+                                                    <td> {{user.district}} </td>
+                                                    <td> {{user.ruralMunicipality}} </td>
+                                                    <td> {{user.wardNo}} </td>
+                                                    <td> {{ user.number }}</td>
+                                                    <td></td>
+                                                    <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="pagination-wrapper clearfix">
+                                    <nav aria-label="Page navigation example ">
+                                        <ul class="pagination pull-right">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_3">
+                            <div class="block block2">
+                                <div class="heading clearfix">
+                                    <div class="title">
+                                        <h1>User - LEVEL 2</h1>
+                                    </div>
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="data-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Username</th>
+                                                    <th>Province</th>
+                                                    <th>District</th>
+                                                    <th>Municipality</th>
+                                                    <th>Ward No</th>
+                                                    <th>Phone</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor='let user of this.level2Data; let i = index'>
+                                                    <td> {{i+1}} </td>
+                                                    <td> {{user.username}} </td>
+                                                    <td> {{user.province}} </td>
+                                                    <td> {{user.district}} </td>
+                                                    <td> {{user.ruralMunicipality}} </td>
+                                                    <td> {{user.wardNo}} </td>
+                                                    <td> {{ user.number }}</td>
+                                                    <td></td>
+                                                    <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="pagination-wrapper clearfix">
+                                    <nav aria-label="Page navigation example ">
+                                        <ul class="pagination pull-right">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab_default_4">
+                            <div class="block block3">
+                                <div class="heading clearfix">
+                                    <div class="title">
+                                        <h1>User- LEVEL 3</h1>
+                                    </div>
+                                    <form class="search-form">
+                                        <div class="form-group has-feedback">
+                                            <label for="search" class="sr-only">Search</label>
+                                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="data-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Username</th>
+                                                    <th>Province</th>
+                                                    <th>District</th>
+                                                    <th>Municipality</th>
+                                                    <th>Ward No</th>
+                                                    <th>Phone</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor='let user of this.level3Data; let i = index'>
+                                                    <td> {{i+1}} </td>
+                                                    <td> {{user.username}} </td>
+                                                    <td> {{user.province}} </td>
+                                                    <td> {{user.district}} </td>
+                                                    <td> {{user.ruralMunicipality}} </td>
+                                                    <td> {{user.wardNo}} </td>
+                                                    <td> {{ user.number }}</td>
+                                                    <td></td>
+                                                    <td><i class="fa fa-minus-circle remove-icon" aria-hidden="true"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="pagination-wrapper clearfix">
+                                    <nav aria-label="Page navigation example ">
+                                        <ul class="pagination pull-right">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="addProd">
+        </div>
+        <div class="modal" id='addUserModal' tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <form [formGroup]='this.loginsForm' (submit)="addLogins(this.loginsForm)">
+                                <div class='form-group col-md-6'>
+                                    <label for="username">Username</label>
+                                    <input class='form-control' type="text" id='username' formControlName='username' placeholder="Username">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="password">Password</label>
+                                    <input class='form-control' type="password" id='password' formControlName='password' placeholder="Password">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="email">Email</label>
+                                    <input class='form-control' type="text" id='email' formControlName='mainEmail' placeholder="Email">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="loginType">Login Type</label>
+                                    <select class='form-control' name="loginType" id="loginType" formControlName='loginType'>
+                                        <option value='superAdmin'>Super Admin</option>
+                                        <option value='level1'>Level 1</option>
+                                        <option value='level2'>Level 2</option>
+                                        <option value='level3'>Level 3</option>
+                                    </select>
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="mainProvince">Province</label>
+                                    <select class='form-control' id='mainProvince' formControlName='mainProvince'>
+                                        <option selected disabled>Select Province</option>
+                                        <option>Province 1</option>
+                                        <option>Province 2</option>
+                                        <option>Province 3</option>
+                                        <option>Province 4</option>
+                                    </select>
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="mainDistrict">District</label>
+                                    <select class='form-control' id='mainDistrict' formControlName='mainDistrict'>
+                                        <option selected disabled>Select District</option>
+                                        <option>Taplejung</option>
+                                        <option>Sankhuwasabha</option>
+                                        <option>Solukhumbu</option>
+                                        <option>Okhaldhunga</option>
+                                        <option>Khotang</option>
+                                        <option>Bhojpur</option>
+                                        <option>Dhankuta</option>
+                                        <option>Terhathum</option>
+                                        <option>Panchthar</option>
+                                        <option>Ilam</option>
+                                        <option>Jhapa</option>
+                                        <option>Morang</option>
+                                        <option>Sunsari</option>
+                                        <option>Udayapur</option>
+                                        <option>Saptari</option>
+                                        <option>Siraha</option>
+                                        <option>Dhanusa</option>
+                                        <option>Mahottari</option>
+                                        <option>Sarlahi</option>
+                                        <option>Rautahat </option>
+                                        <option>Bara</option>
+                                        <option>Parsa</option>
+                                        <option>Dolakha</option>
+                                        <option>Sindhupalchok</option>
+                                        <option>Rasuwa</option>
+                                        <option>Dhading</option>
+                                        <option>Nuwakot</option>
+                                        <option>Kathmandu</option>
+                                        <option>Bhaktapur</option>
+                                        <option>Lalitpur</option>
+                                        <option>Kavrepalanchok</option>
+                                        <option>Ramechhap</option>
+                                        <option>Sindhuli</option>
+                                        <option>Makwanpur</option>
+                                        <option>Chitawan</option>
+                                        <option>Gorkha</option>
+                                        <option>Manang</option>
+                                        <option>Mustang</option>
+                                        <option>Myagdi</option>
+                                        <option>Kaski</option>
+                                        <option>Lamjung</option>
+                                        <option>Tanahu</option>
+                                        <option>Nawalparasi east</option>
+                                        <option>Syangja</option>
+                                        <option>Parbat</option>
+                                        <option>Baglung</option>
+                                        <option>Rukum east</option>
+                                        <option>Rolpa</option>
+                                        <option>Pyuthan</option>
+                                        <option>Gulmi</option>
+                                        <option>Arghakhanchi</option>
+                                        <option>Palpa</option>
+                                        <option>Nawalparasi west</option>
+                                        <option>Rupandehi</option>
+                                        <option>Kapilbastu</option>
+                                        <option>Dang</option>
+                                        <option>Banke</option>
+                                        <option>Bardiya</option>
+                                        <option>Dolpa</option>
+                                        <option>Mugu</option>
+                                        <option>Humla</option>
+                                        <option>Jumla</option>
+                                        <option>Kalikot</option>
+                                        <option>Dailekh</option>
+                                        <option>Jajarkot</option>
+                                        <option>Rukum west</option>
+                                        <option>Salyan</option>
+                                        <option>Surkhet</option>
+                                        <option>Bajura</option>
+                                        <option>Bajhang</option>
+                                        <option>Darchula</option>
+                                        <option>Baitadi</option>
+                                        <option>Dadeldhura</option>
+                                        <option>Doti</option>
+                                        <option>Achham</option>
+                                        <option>Kailali</option>
+                                        <option>Kanchanpur</option>
+                                    </select>
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="mainRuralMunicipality">Rural Municipality</label>
+                                    <input class='form-control' type="text" id='mainRuralMunicipality' formControlName='mainRuralMunicipality' placeholder="Rural Municipality">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="mainVillageCity">Village/City</label>
+                                    <input class='form-control' type="text" id='mainVillageCity' formControlName='mainVillageCity' placeholder="Village/City">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="mainWardNo">Ward No</label>
+                                    <input class='form-control' type="text" id='mainWardNo' formControlName='mainWardNo' placeholder="Ward No">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="note">Note</label>
+                                    <input class='form-control' type="text" id='note' formControlName='note' placeholder="Note">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="number">Phone No</label>
+                                    <input class='form-control' type="text" id='number' formControlName='number' placeholder="Phone No">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="contactNote">Contact Note</label>
+                                    <input class='form-control' type="text" id='contactNote' formControlName='contactNote' placeholder="Contact Note">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="contactPersonName">Contact Person Name</label>
+                                    <input class='form-control' type="text" id='contactPersonName' formControlName='contactPersonName' placeholder="Contact Person Name">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="contactPosition">Position</label>
+                                    <input class='form-control' type="text" id='contactPosition' formControlName='contactPosition' placeholder="Position">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input class='form-control' type="text" id='contactNumber' formControlName='contactNumber' placeholder="Contact Number">
+                                </div>
+                                <div class='form-group col-md-6'>
+                                    <label for="contactEmail">Contact Email</label>
+                                    <input class='form-control' type="text" id='contactEmail' formControlName='contactEmail' placeholder="Contact Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="button" class="btn modal-btn" pull-right (click)='addLogins(this.loginsForm)'><span class='fa fa-plus'> Add User </span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
