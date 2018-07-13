@@ -1,13 +1,11 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
 /tmp
 /out-tsc
 
 # dependencies
 /node_modules
-/API
 /API/node_modules
 
 # IDEs and editors
@@ -44,7 +42,6 @@ testem.log
 Thumbs.db
 
 #Sanjog Ignoring some stuff
-/API
 /node_modules
 /API/node_modules
 
