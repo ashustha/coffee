@@ -1,2 +1,2 @@
 -This folder contains additional packages required as fusionchart's extensions
--Put the files in these folders inside /node_modules/fusioncharts/maps folder
+-Put the files in these folders inside /node_modules/fusioncharts/maps folder.
